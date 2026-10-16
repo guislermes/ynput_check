@@ -16,20 +16,20 @@ def _utc_now() -> datetime:
     return datetime.now(timezone.utc)
 
 
+class Server(str, Enum):
+    """Where the show lives (local learning / studio site). Thin until ProjectSetting."""
+
+    LOCAL = "local"
+    STUDIO = "studio"
+    CLOUD = "cloud"
+
+
 class ProjectStatus(str, Enum):
     PITCH = "pitch"
     IN_PROGRESS = "in_progress"
     ON_HOLD = "on_hold"
     COMPLETED = "completed"
     CANCELLED = "cancelled"
-
-
-class Server(str, Enum):
-    """Studio server / vertical bucket — shared by Project and Plate."""
-
-    STORAGE = "storage"
-    ADVERTISE = "advertise"
-    ENTERTAINMENT = "entertainment"
 
 
 class Project(SQLModel, table=True):

@@ -1,9 +1,9 @@
 from datetime import datetime, timezone
 from typing import Optional
 
-from sqlmodel import Field, SQLModel, create_engine
+from sqlmodel import Field, SQLModel
 
-from node_004_db_model_project import Server
+from node_004_db_model_project import Server  # noqa: E402 — Server lives on project module
 
 
 def _utc_now() -> datetime:

@@ -1,0 +1,27 @@
+---
+description: Never execute scripts or commands unless Guilherme explicitly asks
+alwaysApply: true
+---
+
+# Never Run Unless Asked
+
+Do **not** run scripts, CLI commands, seeds, tests, installs, or servers unless Guilherme explicitly asks to run them.
+
+## Allowed without a run request
+
+- Read / search / edit files
+- Draft code and explain how to run it
+- Propose the exact command — wait for him to say run / execute / go
+
+## Requires an explicit ask
+
+```text
+✅ "run it" / "uv run …" / "execute" / "reseed" / "test this"
+❌ silent `uv run`, pip install, DB wipe, git push after only writing code
+```
+
+## After writing runnable code
+
+- Stop at the edit.
+- Show the command he can run.
+- Do not auto-verify by executing unless he asked.

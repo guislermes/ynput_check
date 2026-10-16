@@ -31,7 +31,8 @@ Project
 └── Person                      # not "Artist" as the entity name
 ```
 
-Status / task type stay as enums or lookup tables matching Kitsu language
+Status / task type stay as enums 
+
 (`Todo`, `WIP`, `Retake`, `Done` — exact labels can alias later).
 
 ### AYON-shaped (publish)
